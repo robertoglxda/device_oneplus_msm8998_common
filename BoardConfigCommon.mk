@@ -186,7 +186,7 @@ TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/recovery.fstab
-#TARGET_RECOVERY_UI_LIB := librecovery_ui_msm
+TARGET_RECOVERY_UI_LIB := librecovery_ui_custom
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Releasetools
