@@ -769,6 +769,12 @@ on property:sys.shutdown.requested=*
     stop vendor.cnss-daemon
     stop vendor.per_proxy
 
+on property:sys.button_backlight.on=true
+    write /sys/class/leds/button-backlight/brightness 255
+
+on property:sys.button_backlight.on=false
+    write /sys/class/leds/button-backlight/brightness 0
+
 service vendor.ppd /vendor/bin/mm-pp-dpps
     class late_start
     user system
